@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1.Intro.iml" filepath="$PROJECT_DIR$/1.Intro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroINTelJ/IntroINTelJ.iml" filepath="$PROJECT_DIR$/IntroINTelJ/IntroINTelJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroShell/IntroShell.iml" filepath="$PROJECT_DIR$/IntroShell/IntroShell.iml" />
+    </modules>
+  </component>
+</project>
