@@ -98,4 +98,16 @@ public class Personne {
     public void setVille(String ville) {
         this.ville = ville;
     }
+
+    @Override
+    public String toString() {
+        return "Personne{" +
+                "identifier=" + identifier +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", ville='" + ville + '\'' +
+                '}';
+    }
 }
