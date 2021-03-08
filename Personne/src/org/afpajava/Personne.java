@@ -1,6 +1,11 @@
 package org.afpajava;
 
+import java.util.regex.Pattern;
+
 public class Personne {
+
+
+
     private int identifier;
     private String firstName;
     private String lastName;
@@ -8,7 +13,22 @@ public class Personne {
     private String adresse;
     private String ville;
 
+//    public Personne() {
+//        this( 0, "john", "doe", "unknown@anywhere.unk"," rue Ottawa","Ottawa");
+//    }
+
+
     public Personne() {
+        this( 0, "john", "doe", "unknown@anywhere.unk"," rue Ottawa","Ottawa");
+    }
+
+    public Personne(int identifier, String firstName, String lastName, String email, String adresse, String ville) {
+        this.identifier = identifier;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.adresse = adresse;
+        this.ville = ville;
     }
 
     public int getIdentifier() {
