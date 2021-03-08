@@ -5,10 +5,11 @@ public class Personne {
     private String firstName;
     private String lastName;
     private String email;
+    private String adresse;
+    private String ville;
 
-
-
-
+    public Personne() {
+    }
 
     public int getIdentifier() {
         return identifier;
@@ -40,5 +41,21 @@ public class Personne {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public String getVille() {
+        return ville;
+    }
+
+    public void setVille(String ville) {
+        this.ville = ville;
     }
 }
