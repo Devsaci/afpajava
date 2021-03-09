@@ -15,7 +15,7 @@ private double salary;
     public Emplyee(int identifier, String firstName, String lastName, String email,
                    String adresse, String ville, double salary) {
         super(identifier, firstName, lastName, email, adresse, ville);
-        this.salary = salary;
+        this.setSalary(salary);
     }
 
     public double getSalary() {
