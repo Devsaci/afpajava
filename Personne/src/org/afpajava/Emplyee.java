@@ -1,11 +1,15 @@
 package org.afpajava;
 
+
+
 public class Emplyee extends Personne{
+
+    private static final int MIN = 1000;
 private double salary;
 
     public Emplyee() {
         super();
-   
+        this.setSalary(MIN);
     }
 
     public Emplyee(int identifier, String firstName, String lastName, String email,
