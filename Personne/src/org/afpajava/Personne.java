@@ -16,7 +16,7 @@ public class Personne {
 
 
     public Personne() {
-        this( 0, "john", "doe", "unknown@anywhere.unk"," rue Ottawa","Ottawa");
+        this( 0, "personne", "PERSONNE", "personne@mail.uk"," rue Ottawa","Ottawa");
     }
 
     public Personne(int identifier, String firstName, String lastName, String email, String adresse, String ville) {
@@ -99,23 +99,23 @@ public class Personne {
         this.ville = ville;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Personne{" +
-//                "identifier=" + identifier +
-//                ", firstName='" + firstName + '\'' +
-//                ", lastName='" + lastName + '\'' +
-//                ", email='" + email + '\'' +
-//                ", adresse='" + adresse + '\'' +
-//                ", ville='" + ville + '\'' +
-//                '}';
-//    }
-
-    @Override public String toString() {
-        return String.format( "%d: %s %s @ %s",
-                this.identifier,
-                this.firstName,
-                this.lastName,
-                this.email );
+    @Override
+    public String toString() {
+        return "Personne{" +
+                "identifier=" + identifier +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", ville='" + ville + '\'' +
+                '}';
     }
+
+//    @Override public String toString() {
+//        return String.format( "%d: %s %s @ %s",
+//                this.identifier,
+//                this.firstName,
+//                this.lastName,
+//                this.email );
+//    }
 }
