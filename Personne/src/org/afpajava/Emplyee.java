@@ -27,4 +27,12 @@ private double salary;
             throw new RuntimeException("Salary > 0");
         this.salary = salary;
     }
+
+
+    @Override
+    public String toString() {
+        return "Emplyee{" +
+                "salary=" + salary +
+                '}';
+    }
 }
