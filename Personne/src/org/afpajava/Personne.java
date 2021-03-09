@@ -99,17 +99,23 @@ public class Personne {
         this.ville = ville;
     }
 
-    @Override
-    public String toString() {
-        return "Personne{" +
-                "identifier=" + identifier +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", adresse='" + adresse + '\'' +
-                ", ville='" + ville + '\'' +
-                '}';
+//    @Override
+//    public String toString() {
+//        return "Personne{" +
+//                "identifier=" + identifier +
+//                ", firstName='" + firstName + '\'' +
+//                ", lastName='" + lastName + '\'' +
+//                ", email='" + email + '\'' +
+//                ", adresse='" + adresse + '\'' +
+//                ", ville='" + ville + '\'' +
+//                '}';
+//    }
+
+    @Override public String toString() {
+        return String.format( "%d: %s %s @ %s",
+                this.identifier,
+                this.firstName,
+                this.lastName,
+                this.email );
     }
-
-
 }
