@@ -31,8 +31,6 @@ private double salary;
 
     @Override
     public String toString() {
-        return "Emplyee{" +
-                "salary=" + salary +
-                '}';
+        return super.toString() + " -travail pour " + this.getSalary();
     }
 }

@@ -23,13 +23,31 @@ public class Main {
 
 
         // Plymorphisme
+        System.out.println( "Personne");
+        System.out.println( "******************************************** ");
+        Personne toto = new Personne(0,"toto","TOTO","toto@mail","adresstoto","villetoto");
+        System.out.println( toto );
+        System.out.println( "******************************************** ");
+        System.out.println( "Emplyee");
+        Emplyee empl = new Emplyee(1, "empl", "EMPL", "supremacy@mail.us","ville","adress" ,10_000 );
+        System.out.println( empl );
+        System.out.println( "******************************************** ");
+        System.out.println( "Client");
+        Client client = new Client(7, "clent1", "CLENT1", "clent1@mail.uk","ville","adress", "ENTREP" );
+        System.out.println( client );
+        System.out.println( "******************************************** ");
+        System.out.println( "ArrayList");
+
+
 
         ArrayList<Personne> personnes = new ArrayList<>();
-        personnes.add( new Personne());
+        personnes.add( new Personne(0,"toto","TOTO","toto@mail","adresstoto","villetoto"));
         personnes.add( new Emplyee( 1, "empl", "EMPL", "supremacy@mail.us","ville","adress" ,10_000 ) );
-        personnes.add( new Client( 7, "clent1", "CLENT1", "clent1@mail.uk", "ENTREP" ) );
+        personnes.add( new Client( 7, "clent1", "CLENT1", "clent1@mail.uk", "ville","adress","ENTREP" ) );
         for( Personne person : personnes ) {
             System.out.println( person );
         }
+        System.out.println( "*****************END*************** ");
     }
+
 }
